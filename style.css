@@ -10,12 +10,14 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  justify-content: space-between;
 }
 .petCard.active {
   height: 435px;
   width: 270px;
   display: block;
   background: #f6f6f6;
+  border: 2px solid black;
 }
 .petCard.next {
   display: none;
@@ -24,18 +26,19 @@
 }
 .pet1 {
   height: 270px;
-  width: 270;
+  width: 270px;
   background: url(https://github.com/TimurLagawy/fotoForShelter/blob/master/pets-katrine_pets.png?raw=true);
 }
-.petCard2 {
+.petCard {
   height: 435px;
   width: 270px;
   display: grid;
   background: #f6f6f6;
+  animation: 1s ease-in-out;
 }
 .pet2 {
   height: 270px;
-  width: 270;
+  width: 270px;
   background: url(https://github.com/TimurLagawy/fotoForShelter/blob/master/pets-jennifer_pets.png?raw=true);
 }
 .petCard3 {
@@ -46,14 +49,13 @@
 }
 .pet3 {
   height: 270px;
-  width: 270;
+  width: 270px;
   background: url(https://github.com/TimurLagawy/fotoForShelter/blob/master/pets-woody_pets.png?raw=true);
 }
 .bottonOurPets {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px 45px;
   gap: 10px;
 
   width: 187px;
@@ -63,10 +65,15 @@
 
   border: 2px solid #f1cdb3;
   border-radius: 100px;
+  padding: 0 0 0 0;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
 }
 .learnMoreButton {
-  width: 187px;
-  height: 52px;
+  width: 100px;
+  height: 22px;
+  margin: auto auto;
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
@@ -177,6 +184,7 @@ button {
 
   border: 2px solid #f1cdb3;
   border-radius: 100px;
+  cursor: pointer;
 }
 .active,
 .next {
@@ -186,4 +194,42 @@ button {
   position: absolute;
   top: 0;
   width: 100%;
+}
+.left-button-our-friends {
+  margin-left: 0%;
+  margin-right: auto;
+}
+.right-button-our-friends {
+  margin-right: 0%;
+  margin-left: auto;
+}
+.to-left {
+  animation-name: left;
+}
+.to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+.from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+.from-right {
+  animation-name: right;
+}
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
 }
