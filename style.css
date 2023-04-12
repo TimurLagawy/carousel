@@ -4,187 +4,18 @@
   left: 50%;
   width: 100%;
   text-align: center;
-  transform: translate(-50%, -50%);
+  transform: translate(-50% -50%);
 }
-.pets-cards-container {
+.item-container {
   position: relative;
   width: 100%;
   overflow: hidden;
-  justify-content: space-between;
 }
-.petCard.active {
-  height: 435px;
-  width: 270px;
-  display: block;
-  background: #f6f6f6;
-  border: 2px solid black;
-}
-.petCard.next {
+.item {
   display: none;
   position: relative;
   margin: 0 auto;
-}
-.pet1 {
-  height: 270px;
-  width: 270px;
-  background: url(https://github.com/TimurLagawy/fotoForShelter/blob/master/pets-katrine_pets.png?raw=true);
-}
-.petCard {
-  height: 435px;
-  width: 270px;
-  display: grid;
-  background: #f6f6f6;
-  animation: 1s ease-in-out;
-}
-.pet2 {
-  height: 270px;
-  width: 270px;
-  background: url(https://github.com/TimurLagawy/fotoForShelter/blob/master/pets-jennifer_pets.png?raw=true);
-}
-.petCard3 {
-  height: 435px;
-  width: 270px;
-  display: grid;
-  background: #f6f6f6;
-}
-.pet3 {
-  height: 270px;
-  width: 270px;
-  background: url(https://github.com/TimurLagawy/fotoForShelter/blob/master/pets-woody_pets.png?raw=true);
-}
-.bottonOurPets {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-
-  width: 187px;
-  height: 52px;
-
-  /* color-primary */
-
-  border: 2px solid #f1cdb3;
-  border-radius: 100px;
-  padding: 0 0 0 0;
-  margin-left: auto;
-  margin-right: auto;
-  cursor: pointer;
-}
-.learnMoreButton {
-  width: 100px;
-  height: 22px;
-  margin: auto auto;
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 130%;
-  /* identical to box height, or 22px */
-
-  letter-spacing: 0.06em;
-
-  /* color-dark-3xl */
-
-  color: #292929;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  text-decoration: none;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  justify-content: center;
-}
-.petName1 {
-  width: 83px;
-  height: 23px;
-  margin-left: auto;
-  margin-right: auto;
-
-  /* pets-card-title */
-
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
-  /* identical to box height */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-
-  /* color-dark-l */
-
-  color: #545454;
-}
-.petName2 {
-  width: 83px;
-  height: 23px;
-  margin-left: auto;
-  margin-right: auto;
-
-  /* pets-card-title */
-
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
-  /* identical to box height */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-
-  /* color-dark-l */
-
-  color: #545454;
-}
-.petName3 {
-  width: 83px;
-  height: 23px;
-  margin-left: auto;
-  margin-right: auto;
-
-  /* pets-card-title */
-
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
-  /* identical to box height */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-
-  /* color-dark-l */
-
-  color: #545454;
-}
-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 23px 19px;
-  width: 52px;
-  height: 52px;
-  left: 0px;
-  top: 192px;
-
-  /* color-primary */
-
-  border: 2px solid #f1cdb3;
-  border-radius: 100px;
-  cursor: pointer;
+  animation: 0.5s ease-in-out;
 }
 .active,
 .next {
@@ -192,16 +23,43 @@ button {
 }
 .next {
   position: absolute;
-  top: 0;
+  top: 0%;
   width: 100%;
 }
-.left-button-our-friends {
-  margin-left: 0%;
-  margin-right: auto;
+.description {
+  display: flex;
+  margin: 30px 20%;
+  font-size: 32px;
+  border: 2px solid black;
+  justify-content: space-between;
 }
-.right-button-our-friends {
-  margin-right: 0%;
-  margin-left: auto;
+.project-name {
+  padding: 10px;
+}
+.control {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  width: 15%;
+  cursor: pointer;
+}
+.control.left {
+  left: 0;
+  right: auto;
+}
+.control.right {
+  left: auto;
+  right: 0;
+}
+.arrow {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%);
+  font-size: 84px;
+}
+.arrow.right {
+  right: 50%;
 }
 .to-left {
   animation-name: left;
