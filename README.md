@@ -1,2 +1,2 @@
 # carousel
-[link] (https://timurlagawy.github.io/carousel/)
+[link](https://timurlagawy.github.io/carousel/)
