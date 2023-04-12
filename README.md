@@ -1,3 +1,3 @@
 # carousel
 
-[link] (https://timurlagawy.github.io/carousel/index.html)
+[link](https://timurlagawy.github.io/carousel/index.html)
